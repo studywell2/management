@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('dashboard') }}">StudyWell</a>
+            <a class="navbar-brand" href="{{ route('dashboard') }}" style="color: blue; font-size:20px; font-weight:300;">Dashboard</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     @auth
@@ -29,4 +29,6 @@
         @yield('content')
     </main>
 </body>
+
+@yield('scripts')
 </html>

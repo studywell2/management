@@ -15,7 +15,7 @@
                     Update Attendance
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('teachers.attendance.store', $teacher->id) }}" method="POST">
+                    <form action="{{ route('teachers.attendance', $teacher->id) }}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <label for="sign_in" class="form-label">Sign In</label>

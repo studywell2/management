@@ -55,8 +55,11 @@ Route::middleware(['auth'])->group(function () {
         Route::delete('/{teacher}', [TeacherController::class, 'destroy'])->name('destroy');
 
         // Teacher Attendance
-        Route::get('/{teacher}/attendance', [TeacherAttendanceController::class, 'form'])->name('attendance.form');
-        Route::post('/{teacher}/attendance', [TeacherAttendanceController::class, 'store'])->name('attendance.store');
+Route::get('/{teacherId}/attendance', [TeacherController::class, 'attendanceForm'])
+        ->name('attendance.form');
+
+    Route::post('/{teacherId}/attendance', [TeacherController::class, 'attendance'])
+        ->name('attendance');
     });
 
     // Classes

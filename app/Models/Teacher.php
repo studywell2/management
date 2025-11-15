@@ -15,6 +15,7 @@ class Teacher extends Model
         'email',
         'subject',
         'phone',
+        'school_id'
     ];
 
     // Relationship: Teacher has many attendance records

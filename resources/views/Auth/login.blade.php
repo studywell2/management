@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 <body class="bg-light d-flex justify-content-center align-items-center vh-100">
     <div class="card shadow p-4" style="width: 400px;">
@@ -35,6 +37,10 @@
                 <a href="{{ route('register') }}">Register</a>
             </p>
         </form>
+
+        <footer>
+            <p style="text-align: center; margin-top:1rem; ">Made by <i class="bi bi-balloon-heart-fill" style="color: red;"></i> Studywell </p>
+        </footer>
     </div>
 </body>
 </html>
